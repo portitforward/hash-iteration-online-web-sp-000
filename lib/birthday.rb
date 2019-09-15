@@ -11,3 +11,9 @@ def happy_birthday(birthday_kids)
 end
 
 
+def age_appropriate_birthday(birthday_kids)
+  birthday_kids.each{|n, a|  a <=12 ?
+    puts "Happy Birthday #{n}! You are now #{a} years old!" : a=a
+  }
+end
+
